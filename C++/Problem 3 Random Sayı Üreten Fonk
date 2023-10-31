@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <time.h>     // Zaman bilgilerini kaydetmek için kullanıllır.
+
+
+            // Not Fully But Close Random Number Generatörü
+
+int main(){
+
+    srand(time(NULL));   // Rastgele Sayı Üreticisini Başlatır.
+
+    int num = rand();   // Random Sayı Üreten Fonksiyon
+    
+    std::cout << num;
+
+    return 0;
+
+}
+
+int main(){
+
+    srand(time(NULL));   // Rastgele Sayı Üreticisini Başlatır.
+
+    int num = (rand() % 6) + 1;   // 1 ile 6 arasında Random Sayı Üreten Fonksiyon (Zar Uygulaması yapmak içinde kullanılır.)
+    
+    std::cout << num;
+
+    return 0;
+
+}
+
+int main(){
+
+    srand(time(NULL));   // Rastgele Sayı Üreticisini Başlatır.
+
+    int num1 = (rand() % 6) + 1;  // Art arda 3 adet random sayı üretebilir.
+    int num2 = (rand() % 6) + 1;
+    int num3 = (rand() % 6) + 1;
+    
+    std::cout << num1 << '\n';
+    std::cout << num2 << '\n';
+    std::cout << num3 << '\n';
+
+    return 0;
+
+}
